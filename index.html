@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heróis Cibernéticos - Desafio do Número Mágico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Heróis Cibernéticos</h1>
+        <p class="subtitle">Decifre o código para salvar o Mundo dos Bits!</p>
+
+        <div class="content">
+            <div class="instructions">
+                <h2>O Desafio:</h2>
+                <p>Encontre o número mágico que:</p>
+                <ul>
+                    <li>É a soma de todos os números primos menores que 20</li>
+                    <li>A soma dos seus dígitos é ≤ 25</li>
+                    <li>Quando dividido por 10, tem resto 7</li>
+                </ul>
+            </div>
+
+            <div class="result-section">
+                <div class="buttons-container">
+                    <button id="decipherBtn" style="--clr:#00FFA3"><span>DECIFRAR</span><i></i></button>
+                    <button id="returnBtn" style="--clr:#FF5E00"><span>RETORNAR</span><i></i></button>
+                </div>
+                <div id="result" class="result-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/script.js"></script>
+</body>
+
+</html>

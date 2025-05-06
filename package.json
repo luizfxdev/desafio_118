@@ -1,0 +1,47 @@
+{
+  "name": "desafio_118",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:ts && npm run build:css",
+    "build:ts": "tsc",
+    "build:css": "sass scss/styles.scss:css/styles.css --style compressed --no-source-map",
+    "watch": "concurrently \"npm run watch:ts\" \"npm run watch:css\"",
+    "watch:ts": "tsc --watch",
+    "watch:css": "sass --watch scss/styles.scss:css/styles.css --style compressed --no-source-map",
+    "dev": "npm run watch",
+    "start": "npm run build",
+    "clean": "rimraf dist css",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.12",
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.10",
+    "sass": "^1.87.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "braces": "^3.0.3",
+    "chokidar": "^4.0.3",
+    "detect-libc": "^1.0.3",
+    "fill-range": "^7.1.1",
+    "immutable": "^5.1.2",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "micromatch": "^4.0.8",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^2.3.1",
+    "readdirp": "^4.1.2",
+    "source-map-js": "^1.2.1",
+    "to-regex-range": "^5.0.1"
+  }
+}
